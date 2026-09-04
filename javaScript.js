@@ -1,92 +1,65 @@
-document.addEventListener("DOMContentLoaded", () => {
+const darkModeBtn = document.getElementById("darkModeBtn");
 
-  // =========================
-  // HAMBURGER MENU
-  // =========================
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
+darkModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
 
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
+const volunteerForm = document.getElementById("volunteerForm");
+const successMessage = document.getElementById("successMessage");
 
-    // Auto close menu when clicking link (mobile UX improvement)
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
-    });
-  }
+volunteerForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  // =========================
-  // DARK MODE (SAFE)
-  // =========================
-  const darkModeBtn = document.getElementById("darkModeBtn");
+  successMessage.innerHTML = `
+    <h3 style="margin-top:20px;color:green;">
+      Registration Successful!
+    </h3>
+  `;
 
-  if (darkModeBtn) {
-    darkModeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-  }
+  volunteerForm.reset();
+});
 
-  // =========================
-  // VOLUNTEER FORM
-  // =========================
-  const form = document.getElementById("volunteerForm");
-  const successMessage = document.getElementById("successMessage");
+function animateValue(id, start, end, duration) {
+  let current = start;
+  const range = end - start;
+  const increment = end > start ? 1 : -1;
+  const stepTime = Math.abs(Math.floor(duration / range));
 
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
+  const obj = document.getElementById(id);
 
-      if (successMessage) {
-        successMessage.innerHTML =
-          "<h3 style='color:green;margin-top:15px;'>Registration Successful!</h3>";
-      }
+  const timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
 
-      form.reset();
-    });
-  }
+    if (current == end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
 
-  // =========================
-  // COUNTER ANIMATION (FIXED)
-  // =========================
-  function animateCounter(id, target, speed = 10) {
-    const el = document.getElementById(id);
-    if (!el) return;
+animateValue("volunteers", 0, 5000, 1500);
+animateValue("students", 0, 1200, 2300);
+animateValue("campaigns", 0, 80, 1500);
 
-    let count = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+let currentTestimonial = 0;
 
-    const interval = setInterval(() => {
-      count++;
-      el.textContent = count;
+setInterval(() => {
+  testimonials[currentTestimonial].classList.remove("active");
 
-      if (count >= target) {
-        clearInterval(interval);
-      }
-    }, speed);
-  }
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
 
-  animateCounter("volunteers", 500, 5);
-  animateCounter("students", 10000, 1);
-  animateCounter("campaigns", 120, 20);
+  testimonials[currentTestimonial].classList.add("active");
+}, 3000);
 
-  // =========================
-  // TESTIMONIAL SLIDER (FIXED SAFE)
-  // =========================
-  const testimonials = document.querySelectorAll(".testimonial");
+const cards = document.querySelectorAll(".card, .team-card, .event-card");
 
-  if (testimonials.length > 1) {
-    let index = 0;
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translateY(-10px)";
+  });
 
-    setInterval(() => {
-      testimonials.forEach(t => t.classList.remove("active"));
-
-      index = (index + 1) % testimonials.length;
-
-      testimonials[index].classList.add("active");
-    }, 3000);
-  }
-
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0px)";
+  });
 });

@@ -1,178 +1,592 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NayePankh Foundation NGO</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="style.css">
+    <title>NayePankh Foundation NGO</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-<!-- ================= NAVBAR ================== -->
-<header class="header">
-  <nav class="navbar">
-    
-    <div class="logo">NayePankh Foundation</div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="menu-toggle" id="menuToggle">☰</div>
+  <body>
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#volunteer">Volunteer</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">NayePankh Foundation</div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
 
-    <button id="darkModeBtn">🌙</button>
-  </nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Together, Let's Make a Difference!</h1>
-    <p>Empowering students and communities through education and awareness.</p>
+          <li><a href="#about">About</a></li>
 
-    <div class="hero-buttons">
-      <button>Join Community</button>
-      <button class="secondary-btn">Explore Programs</button>
-    </div>
-  </div>
+          <li><a href="#mission">Mission</a></li>
 
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" />
-  </div>
-</section>
-</header>
+          <li><a href="#programs">Programs</a></li>
 
-<!-- ================= STATS ================= -->
-<section class="stats">
-  <div class="stat-card">
-    <h2 id="volunteers">500</h2>
-    <p>Volunteers</p>
-  </div>
+          <li><a href="#team">Team</a></li>
 
-  <div class="stat-card">
-    <h2 id="students">10000</h2>
-    <p>Students Helped</p>
-  </div>
+          <li><a href="#events">Events</a></li>
 
-  <div class="stat-card">
-    <h2 id="campaigns">120</h2>
-    <p>Campaigns</p>
-  </div>
-</section>
+          <li><a href="#gallery">Gallery</a></li>
 
-<!-- ================= ABOUT ================= -->
-<section class="section" id="about">
-  <h2>About Us</h2>
-  <p style="text-align:center; max-width:800px; margin:auto;">
-    NayePankh Foundation is a student-led NGO working for education and youth empowerment.
-  </p>
-</section>
+          <li><a href="#volunteer">Volunteer</a></li>
 
-<!-- ================= PROGRAMS ================= -->
-<section class="section" id="programs">
-  <h2>Our Programs</h2>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-  <div class="card-container">
+        <button id="darkModeBtn">🌙</button>
+      </nav>
 
-    <div class="card">
-      <h3>Education Support</h3>
-      <p>Helping students with learning resources.</p>
-    </div>
+      <!-- =========================
+             HERO SECTION
+        ========================== -->
 
-    <div class="card">
-      <h3>Internships</h3>
-      <p>Providing real-world experience.</p>
-    </div>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Together, Let's Make a Difference!</h1>
 
-    <div class="card">
-      <h3>Awareness</h3>
-      <p>Social awareness campaigns.</p>
-    </div>
+          <p>
+            Empowering students and communities through education, internships,
+            awareness campaigns, youth leadership, and social impact initiatives
+            across India.
+          </p>
 
-  </div>
-</section>
+          <div class="hero-buttons">
+            <button>Join Community</button>
 
-<!-- ================= EVENTS ================= -->
-<section class="section" id="events">
-  <h2>Events</h2>
+            <button class="secondary-btn">Explore Programs</button>
+          </div>
+        </div>
 
-  <div class="events">
-    <div class="event-card">
-      <h3>Education Drive</h3>
-      <p>20 July 2026</p>
-    </div>
+        <div class="hero-image">
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=386,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-02-15-at-9.17.30-pm-AVLPXr08jETq2nyv.jpeg"
+            alt="NGO Image"
+          />
+        </div>
+      </section>
+    </header>
 
-    <div class="event-card">
-      <h3>Workshop</h3>
-      <p>28 July 2026</p>
-    </div>
-  </div>
-</section>
+    <!-- =========================
+         STATS SECTION
+    ========================== -->
 
-<!-- ================= GALLERY ================= -->
-<section class="section" id="gallery">
-  <h2>Gallery</h2>
+    <section class="stats">
+      <div class="stat-card">
+        <h2>500+</h2>
 
-  <div id="smallImages">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
-  </div>
-</section>
+        <p>Volunteers</p>
+      </div>
 
-<!-- ================= VOLUNTEER ================= -->
-<section class="section" id="volunteer">
-  <h2>Volunteer Registration</h2>
+      <div class="stat-card">
+        <h2>10K+</h2>
 
-  <form id="volunteerForm">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="City" required>
+        <p>Students Helped</p>
+      </div>
 
-    <select required>
-      <option value="">Select Skill</option>
-      <option>Web Development</option>
-      <option>Design</option>
-    </select>
+      <div class="stat-card">
+        <h2>120+</h2>
 
-    <textarea placeholder="Why join?" required></textarea>
+        <p>Awareness Campaigns</p>
+      </div>
+    </section>
 
-    <button type="submit">Register</button>
-  </form>
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
 
-  <div id="successMessage"></div>
-</section>
+    <section id="about" class="section">
+      <h2>About Us</h2>
 
-<!-- ================= TESTIMONIAL ================= -->
-<section class="section">
-  <h2>Testimonials</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            NayePankh Foundation is a student-led NGO dedicated to education
+            support, skill development, youth empowerment, social awareness, and
+            community service.
+          </p>
 
-  <div class="testimonial active">
-    <p>Great experience!</p>
-    <h4>- Volunteer</h4>
-  </div>
+          <br />
 
-  <div class="testimonial">
-    <p>Learned a lot!</p>
-    <h4>- Student</h4>
-  </div>
-</section>
+          <p>
+            We help students gain practical knowledge, confidence, leadership
+            skills, and opportunities through internships, workshops, and
+            campaigns.
+          </p>
+        </div>
 
-<!-- ================= CONTACT ================= -->
-<section class="section" id="contact">
-  <h2>Contact</h2>
-  <p style="text-align:center;">contact@nayepankh.com</p>
-</section>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+            alt="About NGO"
+          />
+        </div>
+      </div>
+    </section>
 
-<script src="javascript.js"></script>
-</body>
+    <!-- =========================
+         MISSION SECTION
+    ========================== -->
+
+    <section id="mission" class="section">
+      <h2>Our Mission</h2>
+
+      <p style="text-align: center; max-width: 900px; margin: auto">
+        Our mission is to provide equal opportunities to students, empower youth
+        through skill development, support communities, and create positive
+        social change through awareness, education, and volunteer-driven
+        initiatives.
+      </p>
+      <p id="secondpara">
+        NayePankh Foundation is a UP Govt, 80G & 12A Registered NGO. We are also
+        one of the Biggest Student led Organization, working towards Uplifting
+        Of Underprivileged. We welcome you to our NayePankh's Family 💙
+      </p>
+    </section>
+
+    <!-- =========================
+         PROGRAMS SECTION
+    ========================== -->
+
+    <section id="programs" class="section">
+      <h2>Our Programs</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Education Support</h3>
+
+          <p>
+            Helping students through educational guidance, mentorship, and
+            learning resources.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Internship Programs</h3>
+
+          <p>
+            Providing practical experience and industry exposure to students and
+            freshers.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Awareness Campaigns</h3>
+
+          <p>Conducting online and offline campaigns for social awareness.</p>
+        </div>
+
+        <div class="card">
+          <h3>Community Development</h3>
+
+          <p>Working together with volunteers to support communities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         TEAM SECTION
+    ========================== 
+
+    <section id="team" class="section">
+
+        <h2>Our Team</h2>
+
+        <div class="team-container">
+
+            <div class="team-card">
+
+                <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Founder">
+
+                <h3>Rahul Sharma</h3>
+
+                <p>Founder</p>
+
+            </div>
+
+            <div class="team-card">
+
+                <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Coordinator">
+
+                <h3>Priya Verma</h3>
+
+                <p>Coordinator</p>
+
+            </div>
+
+            <div class="team-card">
+
+                <img
+                    src="https://randomuser.me/api/portraits/men/76.jpg"
+                    alt="Volunteer Lead">
+
+                <h3>Aman Patel</h3>
+
+                <p>Volunteer Lead</p>
+
+            </div>
+
+        </div>
+
+    </section>
+-->
+
+    <!-- =========================
+         EVENTS SECTION
+    ========================== -->
+
+    <section id="events" class="section">
+      <h2>Upcoming Events</h2>
+
+      <div class="events">
+        <div class="event-card">
+          <h3>Education Drive</h3>
+
+          <p>Date: 20 July 2026</p>
+        </div>
+
+        <div class="event-card">
+          <h3>Women Empowerment Workshop</h3>
+
+          <p>Date: 28 July 2026</p>
+        </div>
+
+        <div class="event-card">
+          <h3>Career Guidance Session</h3>
+
+          <p>Date: 5 August 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         GALLERY SECTION
+    ========================== -->
+
+    <section id="gallery" class="section">
+      <h2>Our Activities</h2>
+
+      <div id="smallImages">
+        <img
+          src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=386,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-02-15-at-9.17.30-pm-AVLPXr08jETq2nyv.jpeg"
+          alt="Activity Image"
+        />
+
+        <img
+          src="https://cdn.pixabay.com/photo/2022/07/31/06/38/school-7355057_1280.jpg"
+          alt="School Activity"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+          alt="Workshop"
+        />
+
+        <h2>Government & NGO Activities</h2>
+
+        <div class="ngo-gallery-container">
+          <div class="ngo-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+              alt="NGO Activity"
+            />
+
+            <div class="overlay">
+              <h3>Education Awareness Drive</h3>
+            </div>
+          </div>
+
+          <div class="ngo-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+              alt="Government Meeting"
+            />
+
+            <div class="overlay">
+              <h3>Youth Leadership Program</h3>
+            </div>
+          </div>
+
+          <div class="ngo-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
+              alt="Workshop"
+            />
+
+            <div class="overlay">
+              <h3>Skill Development Workshop</h3>
+            </div>
+          </div>
+
+          <div class="ngo-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop"
+              alt="Community Support"
+            />
+
+            <div class="overlay">
+              <h3>Community Support Campaign</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         VOLUNTEER SECTION
+    ========================== -->
+
+    <section id="volunteer" class="section volunteer-section">
+      <h2>Volunteer Registration</h2>
+
+      <form id="volunteerForm">
+        <input type="text" placeholder="Enter Your Name" required />
+
+        <input type="email" placeholder="Enter Your Email" required />
+
+        <input type="text" placeholder="City" required />
+
+        <select required>
+          <option value="">Select Skill</option>
+
+          <option>Web Development</option>
+
+          <option>Graphic Design</option>
+
+          <option>Content Writing</option>
+
+          <option>Social Media Management</option>
+        </select>
+
+        <textarea placeholder="Why do you want to join?" required></textarea>
+
+        <button type="submit">Register Now</button>
+      </form>
+    </section>
+
+    <!-- =========================
+         TESTIMONIAL SECTION
+    ========================== -->
+
+    <section class="section testimonials">
+      <h2>Volunteer Feedback</h2>
+
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <p>"Amazing learning experience and supportive environment."</p>
+
+          <h4>- Student Volunteer</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="section donation-section">
+      <h2>Support Our Mission</h2>
+
+      <p class="donation-text">
+        Every contribution helps us create better opportunities for students,
+        empower communities, and support social development initiatives. Your
+        support enables us to organize educational programs, internship
+        opportunities, awareness campaigns, skill development workshops, and
+        community outreach activities across different regions. Together, we can
+        inspire change, spread knowledge, and build a brighter future for
+        thousands of young minds.
+      </p>
+
+      <div class="donation-box">
+        <div class="donation-card">
+          <h3>📚 Education Support</h3>
+
+          <p>
+            Helping students with learning resources, mentorship, and
+            educational guidance.
+          </p>
+        </div>
+
+        <div class="donation-card">
+          <h3>🎯 Skill Development</h3>
+
+          <p>
+            Organizing workshops, internships, and career development programs.
+          </p>
+        </div>
+
+        <div class="donation-card">
+          <h3>🤝 Community Impact</h3>
+
+          <p>
+            Supporting awareness campaigns and community welfare activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="donate-btn-container">
+        <button class="donate-btn">Donate Now</button>
+      </div>
+    </section>
+
+    <!-- =========================
+     PREMIUM CONTACT SECTION
+========================= -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-left">
+        <h2>Contact Us</h2>
+
+        <p class="contact-text">
+          We would love to hear from you. Whether you want to volunteer, support
+          our mission, collaborate, or simply learn more about our initiatives,
+          feel free to contact us anytime.
+        </p>
+
+        <div class="contact-info">
+          <div class="info-box">
+            <h3>📧 Email</h3>
+
+            <p>contact@nayepankh.com</p>
+          </div>
+
+          <div class="info-box">
+            <h3>📞 Phone</h3>
+
+            <p>+91 xxxxxxxxxx</p>
+          </div>
+
+          <div class="info-box">
+            <h3>📍 Address</h3>
+
+            <p>UP GOVERNMENT, 80G & 12A Registered NGO</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+
+      <div class="contact-right">
+        <form class="contact-form">
+          <input type="text" placeholder="Enter Your Name" required />
+
+          <input type="email" placeholder="Enter Your Email" required />
+
+          <input type="text" placeholder="Subject" required />
+
+          <textarea placeholder="Write Your Message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+     PREMIUM FOOTER SECTION
+========================= -->
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- FOOTER ABOUT -->
+
+        <div class="footer-box">
+          <h2 class="footer-logo">NayePankh Foundation</h2>
+
+          <p class="footer-about">
+            NayePankh Foundation is dedicated to empowering students, supporting
+            communities, and creating opportunities through education, awareness
+            campaigns, internships, and social impact initiatives.
+          </p>
+        </div>
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#programs">Programs</a></li>
+
+            <li><a href="#events">Events</a></li>
+
+            <li><a href="#volunteer">Volunteer</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- PROGRAMS -->
+
+        <div class="footer-box">
+          <h3>Our Programs</h3>
+
+          <ul class="footer-links">
+            <li>Education Support</li>
+
+            <li>Internship Programs</li>
+
+            <li>Skill Development</li>
+
+            <li>Awareness Campaigns</li>
+
+            <li>Community Welfare</li>
+          </ul>
+        </div>
+
+        <!-- CONTACT INFO -->
+
+        <div class="footer-box">
+          <h3>Contact Info</h3>
+
+          <p>📧 contact@nayepankh.com</p>
+
+          <p>📞 +91 xxxxxxxxxx</p>
+
+          <p>📍 UP GOVERNMENT, 80G & 12A Registered NGO</p>
+
+          <div class="social-icons">
+            <a href="#">🌐</a>
+
+            <a href="#">📘</a>
+
+            <a href="#">📸</a>
+
+            <a href="#">▶️</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 NayePankh Foundation NGO | All Rights Reserved | Developed by
+          BhauRao
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="javaScript.js"></script>
+  </body>
 </html>
